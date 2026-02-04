@@ -123,3 +123,38 @@ footer p{
     margin: 0;
     font-weight: 300;
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; 
+        margin: 10px; 
+    }
+
+    header, nav, main, footer {
+        grid-column: 1 / 2; 
+    }
+
+    header {
+        grid-row: 1;
+    }
+
+    nav {
+        grid-row: 2;
+    }
+
+    main {
+        grid-row: 3;
+    }
+
+    footer {
+        grid-row: 4;
+    }
+
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
